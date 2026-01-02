@@ -6,6 +6,8 @@ dotenv.config( {
     path: "./.env",
 } )
 
+
+
 connectDb()
     .then( () => {
         app.listen( process.env.PORT, () => console.log( `The backend is listening on ${ process.env.PORT }` ) )

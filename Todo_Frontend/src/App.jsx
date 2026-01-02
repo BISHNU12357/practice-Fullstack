@@ -1,13 +1,10 @@
 import { useState } from "react"
+import { Landing } from "../components/Landing.jsx"
 
 const App = () => {
-  const [counter, setCounter] = useState( 0 );
+
   return <div>
-    <button onClick={ () => {
-      setCounter( counter + 1 )
-    } }>
-      { counter }
-    </button>
+    <Landing />
   </div>
 }
 
